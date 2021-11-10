@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+body{
+    width: 100%;
+    max-width: 1440px;
+    font-size: 16px;
+    color:  #ffffff;
+    letter-spacing: 2.704px;
+    background-image:url(/assets/crew/background-crew-desktop.jpg) ;
+    background-repeat: no-repeat;
+    background-size:1440px;
+   
+}
+
+
+.homeNav{
+    width: 95%;
+    max-width: 1440px;
+    display: flex;
+    margin: auto;
+    margin-right: 0rem;
+    padding: 0.5rem;
+    justify-content: space-between;
+}
+#nav a{
+    text-decoration: none;
+    font-size: 1rem;
+    color:  #ffffff;
+    letter-spacing: 2.704px;
+    position: relative;
+}
+
+
+.active::before{
+    content: '';
+    position: absolute;
+    margin: 0 auto;
+    bottom: -10px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    border: 1px solid ;
+    color: #ffffff;
+}
+#navMenu{
+    background-color: rgba(255,255,255,.04);
+    backdrop-filter: blur(8px);
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main{
+    display: grid;
+    row-gap: 50px;
+}
+
+/* ****************main************** */
+.mainInfo{
+    margin: auto;
+    width: 88%;
+display: grid;
+row-gap: 50px;
+position: relative;
+}
+
+.meet{
+    font-size: 1.75rem;
+    text-transform: uppercase;
+letter-spacing: 4.732px;
+color: #ffffff;
+margin-bottom: 20px;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 0%;
+    column-gap: 2rem; 
+}
+.txt{
+    margin: auto;
+    display: grid;
+    align-items: center;
+    column-gap: 50px;
+}
+.mid{
+    font-size:2rem;
+color: #d0d6f9;
+text-transform:uppercase;
+margin-bottom: 20px;
+}
+.big{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+small{
+    font-size: 1.125rem;
+color: #d0d6f9;
+margin-bottom: 80px;
+}
+.btns{
+    list-style: none;
+    display: flex;
+    margin-bottom: 50px;
+}
+.btns li{
+    border: 8px solid rgba(255, 255, 255, .17); ;
+    margin-left: 15px;
+    border-radius: 50%;
+}
+.act{
+    background-color: rgb(255, 255, 255);
+}
+.img{
+    position:absolute;
+    right: 0%;
+    top: 0%;
+    overflow: hidden;    
+}
+.img img{
+    width: 450px;
+    height: 515px;
+}
+
+
+
+/* ******************tab view******************* */
+
+@media only screen and (max-width: 900px){
+    body{
+       background-image: url(/assets/crew/background-crew-tablet.jpg);
+    }
+
+    #navMenu span{
+        visibility: hidden;
+    }
+    #navMenu{
+        width: 60%;
+    }
+    .active::before{
+        width: 40%;
+        left: 20px;
+    }
+    
+}
